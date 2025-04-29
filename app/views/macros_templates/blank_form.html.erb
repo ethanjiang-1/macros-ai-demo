@@ -1,0 +1,18 @@
+<h1>Estimate macros</h1>
+
+<p>
+  Send us an image and/or a description of a meal and we'll ask AI to estimate
+  how many calories and macronutrients it contains.
+</p>
+
+<form action="/process_input" method="post" enctype="multipart/form-data">
+  <div>
+  <label for="image_param">Image</label>
+  <input id="image_param" type="file" name="image_param"/>
+  </div>
+  <div>
+  <label for="description_param">Description</label>
+  <textarea id="description_param" name="description_param"></textarea>
+  </div>
+  <button type="submit">Estimate!</button>
+</form>
